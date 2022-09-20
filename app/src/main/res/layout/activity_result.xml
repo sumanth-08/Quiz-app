@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ResultActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="58dp">
+
+        <ImageView
+            android:id="@+id/congratsImage"
+            android:layout_width="40mm"
+            android:layout_height="40mm"
+            android:src="@drawable/illustrator_image4"/>
+
+        <TextView
+            android:id="@+id/congrats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/gotham_bold"
+            android:text="Congratulations!"
+            android:textColor="@color/brown"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/gotham_bold"
+            android:text="your score"
+            android:textAllCaps="true"
+            android:textColor="@color/brown"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_bold"
+            android:text="8/10"
+            android:textColor="@color/brown"
+            android:textSize="36sp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/gotham_bold"
+            android:text="EARNED COINS"
+            android:textColor="@color/brown"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/earnedCoins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_dollar"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/gotham_bold"
+            android:text="0"
+            android:textColor="@color/brown"
+            android:textSize="36sp"
+            android:layout_marginTop="20dp"/>
+
+
+        <Button
+            android:id="@+id/restart"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="restart"
+            android:fontFamily="@font/gotham_bold"
+            android:backgroundTint="@color/malachite_green"
+            android:layout_marginTop="15mm"
+            android:onClick="reStart"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

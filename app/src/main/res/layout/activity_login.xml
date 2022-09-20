@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    tools:context=".LoginActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="45mm"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Again!"
+        android:textSize="26sp"
+        android:fontFamily="@font/gotham_bold"
+        android:textColor="@color/brown"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_back"
+        android:textSize="20sp"
+        android:fontFamily="@font/gotham_book"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="4dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_back1"
+        android:textSize="20sp"
+        android:fontFamily="@font/gotham_book"
+        />
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="35mm">
+
+<!--        <EditText-->
+<!--            android:id="@+id/email"-->
+<!--            android:layout_width="54mm"-->
+<!--            android:layout_height="58dp"-->
+<!--            android:hint="Enter email"-->
+<!--            android:background="@drawable/rounded_button"-->
+<!--            android:paddingLeft="20dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:inputType="textEmailAddress"-->
+<!--            android:cursorVisible="false"/>-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="54mm"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:errorEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:background="@drawable/rounded_button"
+                android:cursorVisible="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"/>
+
+<!--        <EditText-->
+<!--            android:id="@+id/password"-->
+<!--            android:layout_width="54mm"-->
+<!--            android:layout_height="58dp"-->
+<!--            android:hint="Password"-->
+<!--            android:background="@drawable/rounded_button"-->
+<!--            android:paddingLeft="20dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:cursorVisible="false"/>-->
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="54mm"
+            android:layout_height="58dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTintMode="multiply"
+            android:layout_gravity="center"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:background="@drawable/rounded_button"
+                android:cursorVisible="false"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"/>
+
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="54mm"
+            android:layout_height="56dp"
+            android:text="@string/login"
+            android:fontFamily="@font/gotham_bold"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_button2"
+            />
+
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password?"
+            android:fontFamily="@font/gotham_bold"
+            android:padding="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="39mm"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or"
+            android:fontFamily="@font/gotham_book"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="38dp"
+            android:textSize="14dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="36dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icons8_google_48"/>
+            <View
+                android:layout_width="28dp"
+                android:layout_height="0dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icons8_facebook_48"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_bold"
+            android:text="@string/not_a_member"/>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="0dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_now"
+            android:fontFamily="@font/gotham_bold"
+            android:textColor="@color/malachite_green"
+            android:onClick="registerNow"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

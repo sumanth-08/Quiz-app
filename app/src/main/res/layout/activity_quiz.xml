@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".QuizActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:padding="10dp">
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gotham_bold"
+        android:text="30"
+        android:textSize="20sp"/>
+
+        <View
+            android:layout_width="45mm"
+            android:layout_height="0dp"/>
+
+        <TextView
+            android:id="@+id/questionCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_bold"
+            android:text="1/10"
+            android:textSize="20sp"
+            android:gravity="right"
+          />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="5dp">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What is android studio?"
+        android:textSize="22sp"
+        android:fontFamily="@font/gotham_bold"
+        android:gravity="center"
+        android:textColor="@color/brown"
+       />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="12dp"/>
+
+        <TextView
+            android:id="@+id/option1"
+            android:layout_width="45mm"
+            android:layout_height="10mm"
+            android:text="option1"
+            android:textSize="18sp"
+            android:background="@drawable/rounded_button3"
+            android:padding="8dp"
+            android:onClick="onClick"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="12dp"/>
+
+        <TextView
+            android:id="@+id/option2"
+            android:layout_width="45mm"
+            android:layout_height="10mm"
+            android:text="option1"
+            android:textSize="18sp"
+            android:background="@drawable/rounded_button3"
+            android:padding="8dp"
+            android:onClick="onClick"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="12dp"/>
+
+        <TextView
+            android:id="@+id/option3"
+            android:layout_width="45mm"
+            android:layout_height="10mm"
+            android:text="option1"
+            android:textSize="18sp"
+            android:background="@drawable/rounded_button3"
+            android:padding="8dp"
+            android:onClick="onClick"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="12dp"/>
+
+        <TextView
+            android:id="@+id/option4"
+            android:layout_width="45mm"
+            android:layout_height="10mm"
+            android:text="option1"
+            android:textSize="18sp"
+            android:background="@drawable/rounded_button3"
+            android:padding="8dp"
+            android:onClick="onClick"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="12dp"/>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="45mm"
+            android:layout_height="65dp"
+            android:text="next"
+            android:textColor="@color/cream"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/malachite_green"
+            android:onClick="onClick"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/gotham_bold"
+                   />
+
+
+    </LinearLayout>
+
+</LinearLayout>

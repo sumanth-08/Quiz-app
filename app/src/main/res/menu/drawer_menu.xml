@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+<!--    <group android:checkableBehavior="single">-->
+
+        <item android:id="@+id/refer_and_earn"
+            android:title="@string/refer_and_earn"
+            android:icon="@drawable/gift_box"
+            />
+
+        <item android:id="@+id/how_to_play"
+            android:title="@string/how_to_play"
+            android:icon="@drawable/console"
+            />
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout"
+            />
+
+<!--    </group>-->
+
+    <item android:title="Community">
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/share"
+                android:title="Share" />
+
+            <item
+                android:id="@+id/rateUs"
+                android:icon="@drawable/rate_us"
+                android:title="Rate us" />
+
+            <item
+                android:id="@+id/demo2"
+                android:icon="@drawable/about_us"
+                android:title="About us" />
+
+
+
+</menu>
+    </item>
+</menu>
